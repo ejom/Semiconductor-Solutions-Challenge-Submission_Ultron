@@ -12,18 +12,51 @@ The model uses 3 spatial input channels and predicts a continuous IR-drop map of
 
 ---
 
+## Getting Started
+
+### 1. Clone with data
+
+The benchmark data is included as a git submodule. Clone with:
+
+```bash
+git clone --recurse-submodules https://github.com/ejom/Semiconductor-Solutions-Challenge-Submission_Ultron.git
+```
+
+If you already cloned without `--recurse-submodules`, run:
+
+```bash
+git submodule update --init --recursive
+```
+
+### 2. Download release assets
+
+The trained model, preprocessed tensors, and a data backup are available under [Releases](../../releases/latest). Download and place them as follows:
+
+| File | Destination |
+|------|-------------|
+| `best_model.pt` | `checkpoints/best_model.pt` |
+| `fake.pt` | `tensors/fake.pt` |
+| `real.pt` | `tensors/real.pt` |
+| `hidden.pt` | `tensors/hidden.pt` |
+
+The zip files (`fake-circuit-data.zip`, `real-circuit-data.zip`, `hidden-real-circuit-data.zip`) are fallback copies of the benchmark data in case the submodule is unavailable — extract them into `Data/ML-for-IR-drop/benchmarks/`.
+
+---
+
 ## Repository Structure
 .
 ├── build_tensors.py
 ├── fcn_ir_drop.py
 ├── plot_predictions.py
 ├── requirements.txt
+├── Data/
+│   └── ML-for-IR-drop/        ← git submodule
 ├── checkpoints/
-│   └── best_model.pt
+│   └── best_model.pt           ← download from release assets
 ├── tensors/
-│   ├── fake.pt
-│   ├── real.pt
-│   └── hidden.pt
+│   ├── fake.pt                 ← download from release assets
+│   ├── real.pt                 ← download from release assets
+│   └── hidden.pt               ← download from release assets
 └── results/
     └── plots/
 
@@ -266,7 +299,9 @@ python fcn_ir_drop.py
 python plot_predictions.py
 ```
 
-### If you already have a trained checkpoint
+### Validate results with the pretrained checkpoint
+
+Download `best_model.pt`, `fake.pt`, `real.pt`, and `hidden.pt` from [Releases](../../releases/latest) and place them as described above, then:
 
 ```bash
 source .venv/bin/activate
