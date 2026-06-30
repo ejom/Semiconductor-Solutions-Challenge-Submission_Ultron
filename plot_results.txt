@@ -1,0 +1,38 @@
+(.venv) PS C:\Users\ejom7\work\NAU\asuComp\Ultron_final\Ultron> python plot_predictions.py --ckpt checkpoints/best_model.pt
+Loaded checkpoint  epoch=92  val_rmse=0.69962
+
+Hidden samples : 10
+
+[testcase10]  RMSE=0.0003  MAE=0.0003  R²=0.7756  F1=0.4539  P=0.7308  R=0.3292
+  Saved  hidden_testcase10.png
+[testcase13]  RMSE=0.0004  MAE=0.0003  R²=0.7919  F1=0.7884  P=0.9357  R=0.6812
+  Saved  hidden_testcase13.png
+[testcase14]  RMSE=0.0011  MAE=0.0008  R²=0.3938  F1=0.2826  P=1.0000  R=0.1646
+  Saved  hidden_testcase14.png
+[testcase15]  RMSE=0.0005  MAE=0.0004  R²=0.6673  F1=0.2361  P=0.8009  R=0.1385
+  Saved  hidden_testcase15.png
+[testcase16]  RMSE=0.0014  MAE=0.0013  R²=-0.9925  F1=0.0262  P=0.7105  R=0.0133
+  Saved  hidden_testcase16.png
+[testcase19]  RMSE=0.0004  MAE=0.0003  R²=-0.7300  F1=0.4074  P=0.2561  R=0.9957
+  Saved  hidden_testcase19.png
+[testcase20]  RMSE=0.0006  MAE=0.0005  R²=-1.1064  F1=0.3986  P=0.2493  R=0.9943
+  Saved  hidden_testcase20.png
+[testcase7]  RMSE=0.0003  MAE=0.0002  R²=0.8237  F1=0.8790  P=0.8948  R=0.8637
+  Saved  hidden_testcase7.png
+[testcase8]  RMSE=0.0004  MAE=0.0003  R²=0.8132  F1=0.8403  P=0.9274  R=0.7682
+  Saved  hidden_testcase8.png
+[testcase9]  RMSE=0.0002  MAE=0.0002  R²=0.8592  F1=0.7849  P=0.7878  R=0.7819
+  Saved  hidden_testcase9.png
+
+Summary chart → results\plots\summary.png
+
+══ Aggregate metrics (hidden-real-circuit-data) ══
+  RMSE      = 0.00054
+  MAE       = 0.00045
+  NRMSE     = 0.11793
+  R²        = 0.22958
+  Precision = 0.72934
+  Recall    = 0.57305
+  F1 Score  = 0.50974
+
+All plots saved to  results\plots/

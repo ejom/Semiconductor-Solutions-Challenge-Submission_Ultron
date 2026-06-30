@@ -1,0 +1,37 @@
+(.venv) PS C:\Users\ejom7\work\NAU\asuComp\Ultron_final\Ultron> python fcn_ir_drop.py --eval_only
+Loaded checkpoint — epoch 92, best val RMSE 0.69962
+
+────────────────────────────────────────────────────────────────
+  Final evaluation — real-circuit-data  (val)
+────────────────────────────────────────────────────────────────
+  real/testcase1                  RMSE=0.7052  MAE=0.5828  NRMSE=0.0969  R²=0.7552
+  real/testcase11                 RMSE=0.6502  MAE=0.4439  NRMSE=0.0774  R²=0.7524
+  real/testcase12                 RMSE=1.4268  MAE=1.1659  NRMSE=0.1654  R²=-0.2078
+  real/testcase17                 RMSE=0.4249  MAE=0.3241  NRMSE=0.0938  R²=0.6604
+  real/testcase18                 RMSE=0.5311  MAE=0.4167  NRMSE=0.1188  R²=0.4545
+  real/testcase2                  RMSE=0.9483  MAE=0.7379  NRMSE=0.0900  R²=0.8287
+  real/testcase3                  RMSE=0.4220  MAE=0.3380  NRMSE=0.0516  R²=0.8930
+  real/testcase4                  RMSE=0.6851  MAE=0.5445  NRMSE=0.0690  R²=0.8435
+  real/testcase5                  RMSE=0.4597  MAE=0.3767  NRMSE=0.0802  R²=0.8664
+  real/testcase6                  RMSE=0.7429  MAE=0.6160  NRMSE=0.0818  R²=0.8358
+────────────────────────────────────────────────────────────────
+  AGGREGATE                       RMSE=0.6996  MAE=0.5546  NRMSE=0.0925  R²=0.6682
+────────────────────────────────────────────────────────────────
+
+
+────────────────────────────────────────────────────────────────
+  Final evaluation — hidden-real-circuit-data  (test)
+────────────────────────────────────────────────────────────────
+  hidden/testcase10               RMSE=0.6685  MAE=0.4993  NRMSE=0.0827  R²=0.7756
+  hidden/testcase13               RMSE=0.7504  MAE=0.5396  NRMSE=0.0395  R²=0.7919
+  hidden/testcase14               RMSE=2.1324  MAE=1.5224  NRMSE=0.0887  R²=0.3938
+  hidden/testcase15               RMSE=0.8958  MAE=0.7229  NRMSE=0.0880  R²=0.6673
+  hidden/testcase16               RMSE=2.7174  MAE=2.4889  NRMSE=0.2171  R²=-0.9925
+  hidden/testcase19               RMSE=0.7026  MAE=0.6414  NRMSE=0.2121  R²=-0.7300
+  hidden/testcase20               RMSE=1.1217  MAE=1.0463  NRMSE=0.2437  R²=-1.1064
+  hidden/testcase7                RMSE=0.5600  MAE=0.4505  NRMSE=0.0706  R²=0.8237
+  hidden/testcase8                RMSE=0.7254  MAE=0.5990  NRMSE=0.0814  R²=0.8132
+  hidden/testcase9                RMSE=0.3891  MAE=0.3112  NRMSE=0.0555  R²=0.8592
+────────────────────────────────────────────────────────────────
+  AGGREGATE                       RMSE=1.0663  MAE=0.8821  NRMSE=0.1179  R²=0.2296
+────────────────────────────────────────────────────────────────

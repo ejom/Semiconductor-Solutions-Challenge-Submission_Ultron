@@ -1,0 +1,7 @@
+generated README.md and requirements.txt
+
+Renamed model under checkpoints to best_model.pt to align with code
+
+recorded terminal eval results in plot_results.txt and terminal_results.txt. 
+
+Rand plot_predictions.py to generate results/ directory.
