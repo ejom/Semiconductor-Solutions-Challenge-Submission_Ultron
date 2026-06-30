@@ -1,0 +1,3 @@
+[submodule "Data/ML-for-IR-drop"]
+	path = Data/ML-for-IR-drop
+	url = https://github.com/ASU-VDA-Lab/ML-for-IR-drop

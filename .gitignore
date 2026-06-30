@@ -22,7 +22,6 @@ tensors/
 *.ckpt
 
 # Data
-Data/
 *.csv
 *.h5
 *.hdf5
